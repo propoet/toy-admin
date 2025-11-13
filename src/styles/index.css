@@ -1,0 +1,32 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2d3a4b;
+  color: #fff;
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.header {
+  background: #409eff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
