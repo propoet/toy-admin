@@ -7,7 +7,18 @@
       </el-menu>
     </div>
     <div class="main">
-      <div class="header">后台管理系统</div>
+      <div class="header">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <span>{{ $t("common.home") }}</span>
+          <SwitchLang />
+        </div>
+      </div>
       <el-scrollbar height="calc(100% - 50px)">
         <router-view v-slot="{ Component }">
           <KeepAlive include="Home">
@@ -19,6 +30,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import SwitchLang from "@/components/SwitchLang.vue";
 defineOptions({
   name: "Layout",
 });

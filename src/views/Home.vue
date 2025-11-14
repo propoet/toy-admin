@@ -1,8 +1,8 @@
 <template>
   <div>
     <el-card>
-      <h2>🏠 首页</h2>
-      <p>欢迎来到后台管理系统！</p>
+      <h2>{{ $t("common.home") }}</h2>
+      <p>{{ $t("homePage.welcome") }}</p>
       <input type="text" />
     </el-card>
   </div>
