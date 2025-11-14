@@ -14,5 +14,7 @@ export default {
     username: "Username",
     password: "Password",
     button: "Login",
+    usernamePlaceholder: "Please enter your username",
+    passwordPlaceholder: "Please enter your password",
   },
 };

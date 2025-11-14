@@ -2,8 +2,8 @@
   <div class="layout">
     <div class="sidebar">
       <el-menu router>
-        <el-menu-item index="/">首页</el-menu-item>
-        <el-menu-item index="/login">登录页</el-menu-item>
+        <el-menu-item index="/">{{ $t("common.home") }}</el-menu-item>
+        <el-menu-item index="/login">{{ $t("common.login") }}</el-menu-item>
       </el-menu>
     </div>
     <div class="main">

@@ -13,6 +13,8 @@ export default {
     title: '登录页',
     username: '用户名',
     password: '密码',
-    button: '登录'
+    button: '登录',
+    usernamePlaceholder: '请输入用户名',
+    passwordPlaceholder: '请输入密码'
   }
 }
