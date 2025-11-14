@@ -16,7 +16,10 @@
           "
         >
           <span>{{ $t("common.home") }}</span>
-          <SwitchLang />
+          <div style="display: flex; gap: 10px">
+            <SwitchLang />
+            <SwitchDark />
+          </div>
         </div>
       </div>
       <el-scrollbar height="calc(100% - 50px)">
@@ -31,6 +34,7 @@
 </template>
 <script setup lang="ts">
 import SwitchLang from "@/components/SwitchLang.vue";
+import SwitchDark from "@/components/SwitchDark.vue";
 defineOptions({
   name: "Layout",
 });
