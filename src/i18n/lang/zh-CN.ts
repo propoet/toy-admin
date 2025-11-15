@@ -4,10 +4,10 @@ export default {
     login: '登录',
     logout: '退出登录',
     language: '语言',
-    theme: '主题'
+    theme: '主题',
   },
   homePage: {
-    welcome: '欢迎来到后台管理系统！'
+    welcome: '欢迎来到后台管理系统！',
   },
   loginPage: {
     title: '登录页',
@@ -15,6 +15,6 @@ export default {
     password: '密码',
     button: '登录',
     usernamePlaceholder: '请输入用户名',
-    passwordPlaceholder: '请输入密码'
-  }
+    passwordPlaceholder: '请输入密码',
+  },
 }

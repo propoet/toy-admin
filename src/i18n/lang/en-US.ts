@@ -1,20 +1,20 @@
 export default {
   common: {
-    home: "Home",
-    login: "Login",
-    logout: "Logout",
-    language: "Language",
-    theme: "Theme",
+    home: 'Home',
+    login: 'Login',
+    logout: 'Logout',
+    language: 'Language',
+    theme: 'Theme',
   },
   homePage: {
-    welcome: "Welcome to the Admin System!",
+    welcome: 'Welcome to the Admin System!',
   },
   loginPage: {
-    title: "Login Page",
-    username: "Username",
-    password: "Password",
-    button: "Login",
-    usernamePlaceholder: "Please enter your username",
-    passwordPlaceholder: "Please enter your password",
+    title: 'Login Page',
+    username: 'Username',
+    password: 'Password',
+    button: 'Login',
+    usernamePlaceholder: 'Please enter your username',
+    passwordPlaceholder: 'Please enter your password',
   },
-};
+}

@@ -1,9 +1,22 @@
+<script setup lang="ts">
+import SwitchDark from '@/components/SwitchDark.vue'
+import SwitchLang from '@/components/SwitchLang.vue'
+
+defineOptions({
+  name: 'Layout',
+})
+</script>
+
 <template>
   <div class="layout">
     <div class="sidebar">
       <el-menu router>
-        <el-menu-item index="/">{{ $t("common.home") }}</el-menu-item>
-        <el-menu-item index="/login">{{ $t("common.login") }}</el-menu-item>
+        <el-menu-item index="/">
+          {{ $t("common.home") }}
+        </el-menu-item>
+        <el-menu-item index="/login">
+          {{ $t("common.login") }}
+        </el-menu-item>
       </el-menu>
     </div>
     <div class="main">
@@ -32,13 +45,7 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import SwitchLang from "@/components/SwitchLang.vue";
-import SwitchDark from "@/components/SwitchDark.vue";
-defineOptions({
-  name: "Layout",
-});
-</script>
+
 <style scoped>
 .layout {
   height: 100vh;

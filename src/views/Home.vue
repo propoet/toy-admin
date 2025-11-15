@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineOptions({
+  name: 'Home',
+})
+</script>
+
 <template>
   <div>
     <el-card>
@@ -7,13 +13,7 @@
       <p class="text-gray-700 dark:text-gray-100">
         {{ $t("homePage.welcome") }}
       </p>
-      <input type="text" />
+      <input type="text">
     </el-card>
   </div>
 </template>
-
-<script setup lang="ts">
-defineOptions({
-  name: "Home",
-});
-</script>
