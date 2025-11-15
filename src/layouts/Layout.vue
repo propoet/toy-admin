@@ -1,10 +1,19 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import SwitchDark from '@/components/SwitchDark.vue'
 import SwitchLang from '@/components/SwitchLang.vue'
+import TagsView from '@/components/TagsView.vue'
+import { useTagsViewStore } from '@/store/tagsView'
 
 defineOptions({
   name: 'Layout',
 })
+
+// 获取 tagsView store
+const tagsViewStore = useTagsViewStore()
+
+// 获取需要缓存的组件名称列表（用于 KeepAlive）
+const cachedViews = computed(() => tagsViewStore.cachedViews)
 </script>
 
 <template>
@@ -13,6 +22,12 @@ defineOptions({
       <el-menu router>
         <el-menu-item index="/">
           {{ $t("common.home") }}
+        </el-menu-item>
+        <el-menu-item index="/about">
+          关于
+        </el-menu-item>
+        <el-menu-item index="/settings">
+          设置
         </el-menu-item>
         <el-menu-item index="/login">
           {{ $t("common.login") }}
@@ -35,9 +50,10 @@ defineOptions({
           </div>
         </div>
       </div>
-      <el-scrollbar height="calc(100% - 50px)">
+      <TagsView />
+      <el-scrollbar height="calc(100% - 50px - 40px)">
         <router-view v-slot="{ Component }">
-          <KeepAlive include="Home">
+          <KeepAlive :include="cachedViews">
             <component :is="Component" />
           </KeepAlive>
         </router-view>
